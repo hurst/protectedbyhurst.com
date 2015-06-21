@@ -1,3 +1,86 @@
-h1.light { font-family: Ubuntu, Arial, serif; font-weight: 300; }
-h1.normal { font-family: Ubuntu, Arial, serif; font-weight: 400; }
-h1.medium { font-family: Ubuntu, Arial, serif; font-weight: 500; }
+.light { font-family: Ubuntu, Arial, serif; font-weight: 300; }
+.normal { font-family: Ubuntu, Arial, serif; font-weight: 400; }
+.medium { font-family: Ubuntu, Arial, serif; font-weight: 500; }
+.bold { font-family: Ubuntu, Arial, serif; font-weight: 700; }
+.green { color: #389839; }
+
+.centered { text-align: center; }
+.small { font-size: 0.85em; }
+.big { font-size: 1.5em; }
+.bigger { font-size: 3.5em; }
+.biggest { font-size: 6.5em; }
+
+.small-bottom-margin {
+	margin-top: 12px;
+	margin-bottom: 0px;
+}
+
+.small-top-margin {
+	margin-top: 0px;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+	color: #389839;
+}
+
+body {
+	background: #f9f9f9;
+	font-size: 100%;
+}
+
+#container {
+	width: 480px;
+
+	position: absolute;
+	margin: -240px 0 0 -240px;
+  	left: 50%;
+  	top: 50%;
+
+}
+
+#sticker {
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+
+	margin: 12px;
+	padding: 12px;
+  	background: #fff;
+
+	webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+}
+
+#sticker-inner-line {
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+
+	border: 3px solid #389839;
+
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+@media screen and (max-width: 475px) {
+	#container {
+		width: 100%;
+		position: relative;
+		margin: 0px;
+		left: 0;
+		right: 0;
+	}
+
+	#sticker {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.small { font-size: 0.75em; }
+	.big { font-size: 1.0em; }
+	.bigger { font-size: 2.5em; }
+	.biggest { font-size: 3.5em; }
+}
